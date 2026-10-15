@@ -43,6 +43,11 @@
   <body>
     <main>
       <h1>应用链接测试</h1>
+      <section aria-labelledby="example-title">
+        <h2 id="example-title">example · 自定义链接</h2>
+        <p>先安装 example。点击下方按钮后，应打开 example，并显示路径 /path、参数 foo=1。</p>
+        <a href="wellyoung://demo/path?foo=1">打开 example</a>
+      </section>
       <section aria-labelledby="cold-title">
         <h2 id="cold-title">F0101 · 冷启动</h2>
         <p>先结束应用，再点击下方按钮。应用应重新打开并显示 /cold，参数包含 from=auto、scene=cold。</p>
@@ -78,6 +83,11 @@
         <h2 id="clipboard-snapshot-title">F0203 · 关闭剪贴板辅助后查看快照</h2>
         <p>保持应用运行，无需结束应用。点击下方按钮返回 F0203，先在应用中记录开启时的拉起快照，再关闭剪贴板辅助并比较。</p>
         <a href="flumenglinkdemo://demo/clipboard-snapshot?from=auto&amp;id=43">打开应用并进入 F0203</a>
+      </section>
+      <section aria-labelledby="f0401-title">
+        <h2 id="f0401-title">F0401 · 链接成功回调</h2>
+        <p>保持应用运行，并先在 F0401 页面开启结果监听。点击下方按钮后，回到应用查看 Result。</p>
+        <a href="flumenglinkdemo://demo/f0401?from=auto&amp;case=f0401">打开应用并返回 F0401</a>
       </section>
     </main>
   </body>
